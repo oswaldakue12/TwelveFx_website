@@ -1,0 +1,231 @@
+        *{
+            box-sizing: border-box;
+            max-width: 100%;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        html{
+
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+/*Body*/
+
+        body{
+            height: 100vh;
+            background: black;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+/*background animation*/
+    /*shapes*/
+
+    /*circles*/
+
+        .circle{
+            position: absolute;         
+            border: 1px solid gold;
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            transform: translate(-125px, -270px);
+            z-index: -1;
+        }
+        
+        .circle2{
+            position: absolute;         
+            border: 1px solid lightgoldenrodyellow;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            transform: translate(10px, 185px);
+            z-index: -1;
+            opacity: .6;
+        }
+
+        .circle3{
+            position: absolute;         
+            border: 1px solid gold;
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            transform: translate(0, 285px);
+            z-index: -1;
+            opacity: 1;
+        }
+
+/*squares*/
+
+        .square{
+            position: absolute;
+            background: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            transform: translate(250px, 450px) rotate(45deg);
+            z-index: -1;
+            animation: squareanim1 5s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes squareanim1 {
+            0%{
+                transform: translate(250px, 450px) rotate(45deg);
+            }
+            100%{
+                transform: translate(260px, 450px) rotate(45deg);
+            }
+        }
+
+        .square2{
+            position: absolute;
+            background: white;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            transform: translate(1050px, 40px) rotate(45deg);
+            z-index: -1;
+            animation: squareanim2 6s ease-in-out .5s infinite alternate-reverse;
+        }
+
+        @keyframes squareanim2 {
+            0%{
+                transform: translate(1050px, 40px) rotate(45deg);
+            }
+            100%{
+                transform: translate(1050px, 50px) rotate(45deg);
+            }
+        }
+
+
+        .square3{
+            position: absolute;
+            border: 1px solid white;
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            transform: translate(1250px, 480px) rotate(45deg);
+            z-index: -1;
+            animation: squareanim3 5s ease-in-out .2s infinite alternate-reverse;
+        }
+
+        @keyframes squareanim3 {
+            0%{
+                transform: translate(1250px, 480px) rotate(45deg);
+            }
+            100%{
+                transform: translate(1250px, 500px) rotate(45deg);
+            } 
+        }
+
+/*Header > Divs style*/
+
+        header{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            z-index: 1;
+        }
+
+       .home_button {
+        margin: auto;
+        margin-right: 0;
+        transition: transform .05s ease;
+       }
+       
+       .home_button:hover {
+        transform: scale(1.1);
+       } 
+
+       .space3D_page{
+        margin: auto;
+       }
+
+       .Image_page{
+        margin: auto;
+       }
+
+       .Video_page{
+        margin: auto;
+       }
+
+/*Divs > Buttons*/
+
+       .home{
+        border: none;
+        border-bottom: 1px solid gold;
+        background: gold;
+        width: 150px;
+        height: 40px;
+        font-weight: bold;
+       }
+
+       .space3D {
+        border: none;
+        background: black;
+        width: 150px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        transition: border-bottom 0.05s ease;
+       }
+
+       .space3D:hover {
+        border-bottom: 1px solid gold;
+       }
+
+       .Img {
+        border: none;
+        background: black;
+        width: 150px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        }
+
+       .Img:hover{
+        border-bottom: 1px solid gold;
+       }
+
+       .Vid {
+        border: none;
+        background: black;
+        width: 150px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        }
+
+       .Vid:hover{
+        border-bottom: 1px solid gold;
+       }
+
+       .paragraph{
+        color: white;
+        text-align: center;
+        }
+
+       .website_logo{
+        position: relative;
+        background:none;
+        display: flex;
+        flex-direction: row;
+        border: 2px dashed white;
+        width: 50%;
+        height: 55%;
+        margin: none;
+        margin-left: 25vw;
+       }    
+
+       .logo{
+        background: none;
+        margin: auto;
+        width: 480px;
+        height: 270px;
+       }
+
+
